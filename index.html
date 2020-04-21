@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>畅锐军的小游戏，一起来玩玩吧！</title>
+    <link rel="icon" href="./images/icon.jpg">
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        #game {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #000;
+            
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #game .pipeD {
+            background: url(images/pige1.jpg) top center;
+            position: absolute;
+        }
+
+        #game .pipeU {
+            background: url(images/pige2.jpg) bottom center;
+            position: absolute;
+        }
+
+        #bird {
+            width: 34px;
+            height: 25px;
+            /*border-radius: 10px;*/
+            /*background-color: red;*/
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background: url(images/birds.gif) -8px -10px no-repeat;
+        }
+        #beginBtn{
+				/*游戏开始按钮*/
+				width: 85px;
+				height: 29px;
+				background: red;
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translate3d(-50%,0,0);
+				-ms-transform: translate3d(-50%,0,0);
+				-o-transform: translate3d(-50%,0,0);
+				-moz-transform: translate3d(-50%,0,0);
+				transform: translate3d(-50%,0,0);
+				bottom: 300px;
+                z-index: 99999;
+			}
+    </style>
+</head>
+
+<body>
+    <!-- <div id="beginBtn"></div> -->
+   
+    <button type="button" onclick="start()" id="beginBtn">开始游戏</button>
+    
+    <div id="game">
+        
+        <div id="bird"><img src="./images/birds.gif" alt="" width="30px"></div>
+    </div>
+    <script src="./flyBirld.js"></script>
+    <script src="./flyBirldStop.js"></script>
+    <script>
+      var btn = document.getElementById("beginBtn")
+    //   function start() {
+    //       alert("点击了")
+    //   }
+      
+    </script>
+</body>
+
+</html>
